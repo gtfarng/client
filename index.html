@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+ 	$(() => {
+ 	 	$('#p1').html('<h2>p1 foo bar</h2>');
+	 	$('#p2').html('<h2>p2 foo bar</h2>');
+ 	});	
+</script>
+
+</head>
+<body>
+ 	<h1>Hello World</h1>
+ 	<p id="p1">Paragraph1</p>
+ 	<p id="p2">Paragraph2</p>
+
+ 	<script type="text/javascript">
+ 		$('#p1').click(() => {
+ 			$('#p1').hide(2000)
+ 			.show(2000)
+ 			.toggle('slow')
+ 		});
+ 	</script>
+</body>
+</html>
